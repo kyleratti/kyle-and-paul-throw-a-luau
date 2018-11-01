@@ -1,4 +1,12 @@
 var objPic = document.getElementById("action-pic");
+var objHelpText = document.getElementById("help-text");
+var objDetails = document.getElementById("details");
+
+window.addEventListener('touchend', function(e) {
+    e.preventDefault();
+
+    showDetails()
+}, false);
 
 var tblBorderTypes = [
     "dotted",
@@ -10,7 +18,9 @@ var tblBorderTypes = [
 ];
 
 function showDetails() {
-    alert("KYLE AND PAUL ARE PLEASED TO INVITE YOU TO A LUAU AT OUR HUMBLE ESTATE.\n\nDate: Friday, November 4th, 2018\nTime: 7pm - ???\nPlace: The usual - text us if you need the location\nActivities: Drinking\nDog: Present\nFood: Probably some");
+    objHelpText.style["display"] = "none";
+    objPic.style["background-image"] = "url('./assets/img/welcome.jpg')";
+    objDetails.style["display"] = "inline-block";
 }
 
 function getRandomBorderStyle() {

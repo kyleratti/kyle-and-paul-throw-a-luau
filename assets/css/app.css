@@ -39,12 +39,38 @@ h1 {
     cursor: crosshair;
 }
 
-.details {
+.pic-overlay {
+    display: inline-block;
+    background-color: rgba(178, 34, 34, 0.35);
+    padding: 0.5em;
+}
+
+#help-text {
     display: inline-block;
     color: yellowgreen;
-    background-color: firebrick;
-    padding: 0.5em;
     font-size: 2em;
+}
+
+#details {
+    display: none;
+    text-align: left;
+    width: 100%;
+    padding: 0;
+}
+
+#details .title {
+    background-color: lime;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 0.25em;
+}
+
+#details .info {
+    color: lime;
+}
+
+#details ul {
+    list-style-type: none;
 }
 
 footer {
