@@ -2,7 +2,7 @@ var objPic = document.getElementById("action-pic");
 var objHelpText = document.getElementById("help-text");
 var objDetails = document.getElementById("details");
 
-window.addEventListener('touchend', function(e) {
+objPic.addEventListener('touchend', function(e) {
     e.preventDefault();
 
     showDetails()
