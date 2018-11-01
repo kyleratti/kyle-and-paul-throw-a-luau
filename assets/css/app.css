@@ -18,12 +18,29 @@ body {
 h1 {
     font-size: 3.5em;
     text-decoration: underline dashed cyan;
+    margin: 0;
 }
 
-.pix img {
+.pix {
+    display: inline-block;
+    background-image: url('../img/hi.jpg');
+    background-size: cover;
+    background-color: orange;
     min-width: 600px;
     max-width: 50%;
-    border: 2em dotted fuchsia;
+    min-height: 600px;
+    max-height: 75%;
+    border-width: 2em;
+    border-style: dotted solid;
+    border-color: fuchsia;
+}
+
+.details {
+    display: inline-block;
+    color: yellowgreen;
+    background-color: firebrick;
+    padding: 0.5em;
+    font-size: 2em;
 }
 
 footer {
@@ -33,6 +50,7 @@ footer {
     padding: 0.5em;
     text-transform: uppercase;
     margin: 1em;
+    font-weight: bold;
 }
 
 footer marquee {
