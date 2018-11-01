@@ -7,7 +7,11 @@ var tblBorderTypes = [
     "solid",
     "double",
     "groove"
-]
+];
+
+function showDetails() {
+    alert("KYLE AND PAUL ARE PLEASED TO INVITE YOU TO A LUAU AT OUR HUMBLE ESTATE.\n\nDate: Friday, November 4th, 2018\nTime: 7pm - ???\nPlace: The usual - text us if you need the location\nActivities: Drinking\nDog: Present\nFood: Probably some");
+}
 
 function getRandomBorderStyle() {
     return tblBorderTypes[Math.floor(Math.random() * tblBorderTypes.length)];

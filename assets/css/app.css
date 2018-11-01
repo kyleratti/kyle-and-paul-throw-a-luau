@@ -35,6 +35,10 @@ h1 {
     border-color: fuchsia;
 }
 
+.pix:hover {
+    cursor: crosshair;
+}
+
 .details {
     display: inline-block;
     color: yellowgreen;
